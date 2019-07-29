@@ -1,25 +1,70 @@
 @import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300&display=swap'); /* Article Font */
 @import url('https://fonts.googleapis.com/css?family=Yellowtail&display=swap'); /* Delicious Font */
-@import url('https://fonts.googleapis.com/css?family=Oswald:600&display=swap'); /* Chocolate Pizza */
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600&display=swap'); /* Chocolate Pizza */
 @import url('https://fonts.googleapis.com/css?family=Abel&display=swap'); /* SMALL FONT  */
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap'); /* Ingredients */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-    max-width: 920px;
+    max-width: 900px;
     margin: auto;
 }
 
 header {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 120px;
+    margin: 30px -10px -30px 0px;
+    width: 900px;
 }
- .social {
-     display: inline;
+
+.logo-block {
+    width: 70%;
+}
+
+.logo {
+    float: left;
+    height: 60px;
+    margin: 0px 10px -30px 0px;
+}
+
+.delicious {
+    font-family: 'Yellowtail';
+    margin: 0;
+    font-size: 3rem;
+}
+
+.logo-text {
+    font-size: .8rem;
+    margin: 0px 50px -5px 0px;
+}
+
+.hr-img {
+    background-image: url('/assets/hr-img.png');
+    border-image: repeat;
+    height: 10px;
+}
+
+.social {
+    align-self: center;
+ }
+
+ .social2 {
+     margin-left: 10px;
+ }
+
+ .logo-text, .subtitle, .print {
+     font-family: 'Abel';
+     text-transform: uppercase;
  }
 
 .recipe, .bio, footer {
     font-family: 'Frank Ruhl Libre';
     color: #686767;
-    
 }
 
 .recipe {
@@ -59,21 +104,10 @@ input {
     margin: 50px;
 }
 
-.delicious {
-    font-family: 'Yellowtail';
-}
 
 .van {
     float: left;
 }
-
-
-
-.subtitle {
-    font-family: 'Abel';
-    text-transform: uppercase;
-}
-
 
 .article-title {
     font-family: 'Oswald';
